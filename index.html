@@ -517,7 +517,6 @@
                     state = 'TREE'; 
                 }
             });
-
             const cameraUtils = new Camera(video, {
                 onFrame: async () => { await hands.send({image: video}); }, width: 320, height: 240
             });
